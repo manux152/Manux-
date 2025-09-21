@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final webpage; Journey Through the Wonders</title>
+        <style>
+    /* google fonts*/
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    
+    :root{
+      --max-line-width: 66ch;
+      --base-font-size: 18px;
+      --rhythm: 1.6;
+      --accent: #af9bb4;
+      --muted: #e3c6c6;
+    }
+
+    *{box-sizing: border-box;margin:0;padding:0}
+    html,body{height:100%}
+
+    body{
+      margin:20px;
+      background:bisque;
+      font-family: 'Roboto', 'Roboto Condensed', 'PT Serif', Arial, sans-serif;
+      font-size: var(--base-font-size);
+      line-height: var(--rhythm);
+      color:#222;
+    }
+
+    #wrapper{
+      width:90%;
+      margin:0 auto;
+      background:var(--muted);
+      overflow:hidden;
+      padding: 0 1rem 1rem;
+    }
+
+    header{
+      background:tan;
+      color:#111;
+      padding: 20px 24px;
+      margin-bottom:1rem;
+    }
+
+    h1{
+      margin:0;
+      font-family:'PT Serif', Georgia, serif;
+      font-style: normal;
+      font-weight:700;
+      font-variant: small-caps;
+      letter-spacing: 0.5px;
+      font-size: 2.2rem;
+    }
+
+    nav{
+      background: tan;
+      padding: 12px 24px;
+      margin-bottom:1.2rem;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.5rem
+    }
+    nav .nav-item{
+      flex: none
+    }
+    nav a{
+      display:inline-block;
+      text-decoration:none;
+      padding:8px 12px;
+      border-radius:6px;
+      background:var(--accent);
+      color:#111;
+      font-weight:700;
+      font-size:0.95rem;
+      transition: all 180ms ease-in-out;
+    }
+
+    nav a:hover, nav a:focus{
+      transform: translateY(-2px) scale(1.02);
+      background:#555;
+      color:#fff;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+	
+
+    /* Two-column layout */
+    #main-content, #sidebar{
+      float:left;
+      width:50%;
+      padding:1rem;
+    }
+
+    article{
+      background:#fff;
+      margin-bottom:1.2rem;
+      padding:1.2rem 1.4rem;
+      line-height: var(--rhythm);
+      border-radius:6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    h2, h3{
+      font-family:'PT Serif', serif;
+      font-weight:700;
+      margin-bottom:0.75rem;
+    }
+
+    h2{
+		font-size:1.25rem;
+	}
+    h3{
+		font-size:1rem;
+	}
+
+    p{ margin-bottom:1rem }
+
+    figure{
+      margin:0 0 1rem 0;
+      text-align:center;
+    }
+    figure img{
+      max-width:100%;
+      height:auto;
+      border-radius:6px;
+    }
+    figcaption{
+      font-style:italic;
+      font-size:0.95rem;
+      margin-top:6px;
+      color:#666;
+    }
+
+    blockquote{
+      border-left:4px solid #16bc55;
+      padding:12px 16px;
+      margin:16px 0;
+      background:#f4eeee;
+      color:#333;
+      font-style:italic;
+    }
+
+    .requirements-list{ padding-left:1.1rem }
+    .requirements-list li{ margin-bottom:0.5rem }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+    }
+    th,td{
+      border:1px solid #222;
+      padding:8px;
+      text-align:left;
+    }
+    th{
+      background:#f0e6e6;
+      font-weight:700;
+    }
+
+    a{color:#0b5a4a}
+    a:hover{color:#063b2f}
+    a:focus{
+      outline:3px dashed rgba(10,100,80,0.4);
+      outline-offset:3px;
+    }
+
+    footer{
+      clear:both;
+      background:tan;
+      padding:14px 24px;
+      text-align:center;
+      color:#111;
+      margin-top:1rem;
+    }
+
+    /* Responsive */
+    @media (max-width:900px){
+      #main-content, #sidebar{
+		float:none;width:100%;padding:0.8rem
+	}
+      #wrapper{
+		width:96%;
+	 }
+      nav ul{
+		flex-direction:column;
+    }
+  </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Christ the Redeemer</h1>
+            </header>
+                <nav>
+                    <ul>
+                        <li class="nav-item"><a href="page 1.html">link to page 1</a></li>
+                        <li class="nav-item"><a href="page 2.html">link to page 2</a></li>
+                        <li class="nav-item"><a href="page 3.html">link to page 3</a></li>
+                        <li class="nav-item"><a href="page 4.html">link to page 4</a></li>
+                    </ul>
+                </nav>
+            
+            
+            <div id="main-content">
+                <article>
+                    <figure>
+                        <img src="https://www.pandotrip.com/wp-content/uploads/2022/07/Christ-the-Redeemer-Rio-de-Janeiro-Brazil.jpg"
+                         >
+                        <figcaption>
+                            <p>Picture of the statue overlooking Rio with caption: Guardian of the city.</p>
+                        </figcaption>
+                    </figure>
+                    <h2>About Christ the Redeemer</h2>
+                    <p>
+                        Standing 98 feet tall with arms outstretched, Christ the Redeemer overlooks Rio de Janeiro as a symbol of peace and faith. Completed in 1931, it is made of reinforced concrete and soapstone, designed by Brazilian engineer Heitor da Silva Costa and French sculptor Paul Landowski.
+                    </p>
+                    <p>
+                        Perched atop the Corcovado Mountain, the statue offers panoramic views of Rio, including landmarks like Sugarloaf Mountain and Copacabana Beach. It has become an iconic symbol of Brazil and a UNESCO World Heritage site.
+                    </p>
+                    <blockquote>
+                        <p>"A symbol of hope and unity for people around the world."</p>
+                    </blockquote>
+                    <p>
+                        Christ the Redeemer has been embraced by the world as a universal symbol of hope.
+                    </p>
+                </article>
+                <article>
+                    <h2>Construction Facts:</h2>
+                    <p>Construction of Christ the Redeemer began in 1922 and was completed in 1931. The statue was designed to withstand strong winds and weather conditions atop Corcovado Mountain.</p>
+                    <p>The outer layers are made of soapstone, chosen for its durability and ease of use. The inner structure consists of reinforced concrete to provide stability and support.</p>
+                    <p>Engineers used a combination of traditional sculpting techniques and innovative engineering to create this iconic monument.</p>
+                </article>
+                <article>
+                    <h2>Cultural Impact</h2>
+                    <p>Christ the Redeemer has become a cultural icon, representing Brazilian Christianity and hospitality. It attracts millions of visitors annually, contributing significantly to Rio's tourism industry.</p>
+                    <p>The statue has been featured in numerous films, music videos, and artworks, symbolizing peace and unity worldwide.</p>
+                    <p>Local festivals and events often incorporate the image of Christ the Redeemer, highlighting its importance in Brazilian culture and identity.</p>
+                </article>
+               
+            </div>
+            <div id="sidebar">
+                <article>
+                    <figure>
+                        <img src="https://images.adsttc.com/media/images/53d7/68c8/c07a/80d9/7100/01b1/large_jpg/29MUSEUMS1-hp-superJumbo.jpg?1406625982"
+                        >
+                        <figcaption>
+                            <p> An image showing visitors at a viewpoint near Christ the Redeemer statue.</p>
+                        </figcaption>
+                    </figure>
+                    <h2>Visitors</h2>
+                    <p>Christ the Redeemer attracts over 2 million visitors annually, making it one of the most visited monuments in South America.</p>
+                    <p>Tourists can reach the statue via a scenic train ride through Tijuca Forest or by hiking up the Corcovado Mountain trails.</p>
+                    <p>The site offers guided tours, souvenir shops, and panoramic viewpoints for an unforgettable experience.</p>
+                </article>
+            </div>
+            <div id="sidebar">
+                <article>
+                    <h2>Table representing Visitor Statistics</h2>
+                                       
+                    <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Visitors</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>1.2M</td>
+                        <td>Brazil</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>1.5M</td>
+                        <td>France</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>1.7M</td>
+                        <td>China</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>1.8M</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>2.0M</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>2.2M</td>
+                        <td>Canada</td>
+                    </tr>
+                    </table>
+                    <p>Peak visitation occurs during the summer months and major holidays.</p>
+                    <p>Efforts are being made to manage crowds and preserve the site for future generations.</p>
+                    <p>Visitors come from all over the world, with Brazil, France, China, USA, UK, and Canada being the top countries represented.</p>
+                    <p>Conservation initiatives focus on maintaining the statue's structural integrity and surrounding environment.</p>
+                    <p>The most visitors come from Brazil, followed by France, China, USA, UK, and Canada.</p>
+                </article>
+            </div>
+            <footer>
+                <p>&copy; 2025 Journey Through the Wonders. Emmnauel Aggrey All Rights Reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

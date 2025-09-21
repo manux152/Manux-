@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final webpage; Journey Through the Wonders</title>
+  <style>
+    /* google fonts*/
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    
+    :root{
+      --max-line-width: 66ch;
+      --base-font-size: 18px;
+      --rhythm: 1.6;
+      --accent: #af9bb4;
+      --muted: #e3c6c6;
+    }
+
+    *{box-sizing: border-box;margin:0;padding:0}
+    html,body{height:100%}
+
+    body{
+      margin:20px;
+      background:bisque;
+      font-family: 'Roboto', 'Roboto Condensed', 'PT Serif', Arial, sans-serif;
+      font-size: var(--base-font-size);
+      line-height: var(--rhythm);
+      color:#222;
+    }
+
+    #wrapper{
+      width:90%;
+      margin:0 auto;
+      background:var(--muted);
+      overflow:hidden;
+      padding: 0 1rem 1rem;
+    }
+
+    header{
+      background:tan;
+      color:#111;
+      padding: 20px 24px;
+      margin-bottom:1rem;
+    }
+
+    h1{
+      margin:0;
+      font-family:'PT Serif', Georgia, serif;
+      font-style: normal;
+      font-weight:700;
+      font-variant: small-caps;
+      letter-spacing: 0.5px;
+      font-size: 2.2rem;
+    }
+
+    nav{
+      background: tan;
+      padding: 12px 24px;
+      margin-bottom:1.2rem;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.5rem
+    }
+    nav .nav-item{
+      flex: none
+    }
+    nav a{
+      display:inline-block;
+      text-decoration:none;
+      padding:8px 12px;
+      border-radius:6px;
+      background:var(--accent);
+      color:#111;
+      font-weight:700;
+      font-size:0.95rem;
+      transition: all 180ms ease-in-out;
+    }
+
+    nav a:hover, nav a:focus{
+      transform: translateY(-2px) scale(1.02);
+      background:#555;
+      color:#fff;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+	
+
+    /* Two-column layout */
+    #main-content, #sidebar{
+      float:left;
+      width:50%;
+      padding:1rem;
+    }
+
+    article{
+      background:#fff;
+      margin-bottom:1.2rem;
+      padding:1.2rem 1.4rem;
+      line-height: var(--rhythm);
+      border-radius:6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    h2, h3{
+      font-family:'PT Serif', serif;
+      font-weight:700;
+      margin-bottom:0.75rem;
+    }
+
+    h2{
+		font-size:1.25rem;
+	}
+    h3{
+		font-size:1rem;
+	}
+
+    p{ margin-bottom:1rem }
+
+    figure{
+      margin:0 0 1rem 0;
+      text-align:center;
+    }
+    figure img{
+      max-width:100%;
+      height:auto;
+      border-radius:6px;
+    }
+    figcaption{
+      font-style:italic;
+      font-size:0.95rem;
+      margin-top:6px;
+      color:#666;
+    }
+
+    blockquote{
+      border-left:4px solid #16bc55;
+      padding:12px 16px;
+      margin:16px 0;
+      background:#f4eeee;
+      color:#333;
+      font-style:italic;
+    }
+
+    .requirements-list{ padding-left:1.1rem }
+    .requirements-list li{ margin-bottom:0.5rem }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+    }
+    th,td{
+      border:1px solid #222;
+      padding:8px;
+      text-align:left;
+    }
+    th{
+      background:#f0e6e6;
+      font-weight:700;
+    }
+
+    a{color:#0b5a4a}
+    a:hover{color:#063b2f}
+    a:focus{
+      outline:3px dashed rgba(10,100,80,0.4);
+      outline-offset:3px;
+    }
+
+    footer{
+      clear:both;
+      background:tan;
+      padding:14px 24px;
+      text-align:center;
+      color:#111;
+      margin-top:1rem;
+    }
+
+    /* Responsive */
+    @media (max-width:900px){
+      #main-content, #sidebar{
+		float:none;width:100%;padding:0.8rem
+	}
+      #wrapper{
+		width:96%;
+	 }
+      nav ul{
+		flex-direction:column;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Machu Picchu the Lost City in the Clouds</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="nav-item"><a href="page 1.html">Link to Page 1</a></li>
+        <li class="nav-item"><a href="page 2.html">Link to Page 2</a></li>
+        <li class="nav-item"><a href="page 4.html">Link to Page 4</a></li>
+        <li class="nav-item"><a href="page 5.html">Link to Page 5</a></li>
+      </ul>
+    </nav>
+
+    <!-- Left Column -->
+    <div id="main-content">
+      <article>
+        <figure>
+          <img src="https://www.howitworksdaily.com/wp-content/uploads/2013/11/machu-picchu.jpg" alt="Machu Picchu in the Andes">
+          <figcaption>A breathtaking view of Machu Picchu nestled in the Andes Mountains</figcaption>
+        </figure>
+        <h2>About Machu Picchu</h2>
+        <p>
+          Nestled high in the Andes Mountains of Peru, Machu Picchu is an ancient Incan city that has captivated the world with its breathtaking beauty and mysterious history. Often referred to as the "Lost City of the Incas," Machu Picchu is a UNESCO World Heritage site and one of the New Seven Wonders of the World.
+        </p>
+        <p>
+          Each wonder featured here is a testament to human ingenuity and the rich tapestry of cultures that have shaped our world. From the towering Great Wall of China to the mystical Machu Picchu, each site has its own unique story waiting to be discovered.
+        </p>
+        <blockquote>"A marvel of ancient engineering and a testament to the ingenuity of the Inca civilization."</blockquote>
+        <p>
+          Built in the 15th century, Machu Picchu is renowned for its sophisticated dry-stone construction, terraced fields, and panoramic views of the surrounding mountains and valleys.
+        </p>
+      </article>
+
+      <article>
+        <h2>Historical Significance</h2>
+        <blockquote>
+			<p>
+				Machu Picchu provides invaluable insights into Incan civilization, their architectural prowess, and their harmonious relationship with nature.
+			</p>
+		</blockquote>
+        <p>
+			The site remained hidden from the outside world until its rediscovery in 1911 by Hiram Bingham, sparking global interest and archaeological study.
+		</p>
+      </article>
+
+      <article>
+        <h2>Visitors Received</h2>
+        <blockquote>
+			<p>Machu Picchu attracts over a million visitors annually, drawn by its historical significance and breathtaking scenery.</p>
+		</blockquote>
+        <p>Tourism is carefully managed to preserve the site, with daily visitor limits and guided tours.</p>
+      </article>
+    </div><!--close div main-content-->
+
+    <!-- Right Column -->
+    <div id="sidebar">
+      <article>
+        <figure>
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/044/176/690/original/machu-picchu-peru-aerial-view-video.jpg" alt="Aerial view of Machu Picchu">
+          <figcaption>Aerial view of Machu Picchu showcasing its terraces and stone structures</figcaption>
+        </figure>
+        <h2>Fun Facts</h2>
+        <p>Machu Picchu is often shrouded in mist, adding to its mystical allure and earning it the nickname "The Lost City in the Clouds."</p>
+        <p>The site is aligned with astronomical events, such as the solstices, indicating the Incas' advanced understanding of astronomy.</p>
+      </article>
+
+      <article>
+        <h2>Construction Details</h2>  
+        <figure>
+          <img src="https://i.pinimg.com/originals/07/1c/6f/071c6f11ae6c30159c119791e4c2f20e.jpg" alt="Stonework of Machu Picchu">
+          <figcaption>An image showing the intricate stonework of Machu Picchu's construction</figcaption>
+        </figure>
+        <p>Construction began in the mid-15th century under Emperor Pachacuti. Using ashlar technique, stones were cut to fit together without mortar.</p>
+        <p>Water management systems, including aqueducts and fountains, were ingeniously designed to provide fresh water throughout the site.</p>
+      </article>
+
+      <article>
+        <h2>Architectural Features</h2>
+        <p>The sites dry-stone construction has allowed many structures to withstand earthquakes.</p>
+        <p>Terraced fields demonstrate advanced agricultural practices adapted to mountainous terrain.</p>
+        <p>The Intihuatana stone, a ritual stone associated with astronomy, is a notable feature of Machu Picchu.</p>
+      </article>
+
+      <article>
+        <h2>Cultural Impact</h2>
+        <p>Machu Picchu has become a symbol of Incan heritage and pride.</p>
+        <p>It has inspired countless artists, writers, and travelers worldwide.</p>
+      </article>
+    </div><!--close div sidebar-->
+
+    <footer>
+      <p>&copy; 2025 Journey Through the Wonders. Emmnauel Aggrey All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

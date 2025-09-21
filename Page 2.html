@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Webpage Journey Through the Wonders</title>
+     <style>
+  /* google fonts*/
+		@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+		@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+		
+    :root{
+      --max-line-width: 66ch;
+      --base-font-size: 18px;
+      --rhythm: 1.6;
+      --accent: #af9bb4;
+      --muted: #e3c6c6;
+    }
+
+    *{box-sizing: border-box;margin:0;padding:0}
+    html,body{height:100%}
+
+    body{
+      margin:20px;
+      background:bisque;
+      font-family: 'Roboto', 'Roboto Condensed', 'PT Serif', Arial, sans-serif;
+      font-size: var(--base-font-size);
+      line-height: var(--rhythm);
+      color:#222;
+    }
+
+    #wrapper{
+      width:90%;
+      margin:0 auto;
+      background:var(--muted);
+      overflow:hidden;
+      padding: 0 1rem 1rem;
+    }
+
+    header{
+      background:tan;
+      color:#111;
+      padding: 20px 24px;
+      margin-bottom:1rem;
+    }
+
+    h1{
+      margin:0;
+      font-family:'PT Serif', Georgia, serif;
+      font-style: normal;
+      font-weight:700;
+      font-variant: small-caps;
+      letter-spacing: 0.5px;
+      font-size: 2.2rem;
+    }
+
+    nav{
+      background: tan;
+      padding: 12px 24px;
+      margin-bottom:1.2rem;
+    }
+
+    nav ul{
+		list-style:none;
+		display:flex;
+		flex-wrap:wrap;
+		gap:0.5rem
+	}
+    nav .nav-item{
+		flex: none
+	}
+    nav a{
+		display:inline-block;
+		text-decoration:none;
+		padding:8px 12px;
+		border-radius:6px;
+		background:var(--accent);
+		color:#111;
+		font-weight:700;
+		font-size:0.95rem;
+		transition: all 180ms ease-in-out;
+    }
+
+    nav a:hover, nav a:focus{
+		transform: translateY(-2px) scale(1.02);
+		background:#555;
+		color:#fff;
+		box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+	  
+    }
+
+    /* Two-column layout */
+	
+    #main-content, #sidebar{
+		float:left;
+		width:50%;
+		padding:1rem;
+    }
+
+    article{
+		background:#fff;
+		margin-bottom:1.2rem;
+		padding:1.2rem 1.4rem;
+		line-height: var(--rhythm);
+		border-radius:6px;
+		box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    h2, h3{
+		font-family:'PT Serif', serif;
+		font-weight:700;
+		margin-bottom:0.75rem;
+    }
+
+    h2{
+		font-size:1.25rem
+	}
+    h3{
+		font-size:1rem
+	}
+
+    p{margin-bottom:1rem}
+
+    figure{
+		margin:0 0 1rem 0;
+		text-align:center
+		
+		}
+    figure img{
+		max-width:100%;
+		height:auto;
+		border-radius:6px
+	}
+    figcaption{
+		font-style:italic;font-size:0.95rem;margin-top:6px;color:#666}
+
+    blockquote{
+		border-left:4px solid #16bc55;
+		padding:12px 16px;
+		margin:16px 0;
+		background:#f4eeee;
+		color:#333;
+		font-style:italic;
+    }
+
+    .requirements-list{
+		padding-left:1.1rem
+		
+	}
+    .requirements-list li{
+		margin-bottom:0.5rem
+	}
+
+    table{
+		width:100%;border-collapse:collapse;margin-top:12px
+		
+		}
+    th,td{
+		border:1px solid #222;padding:8px;text-align:left
+	}
+    th{
+		background:#f0e6e6;font-weight:700
+	
+	}
+
+    a{color:#0b5a4a}
+    a:hover{
+		color:#063b2f
+	}
+	
+    a:focus{
+		outline:3px dashed rgba(10,100,80,0.4);outline-offset:3px
+	
+	}
+
+    footer{
+		clear:both;
+		background:tan;
+		padding:14px 24px;
+		text-align:center;
+		color:#111;
+		margin-top:1rem;
+    }
+
+    /* Responsive */
+	
+		@media (max-width:900px){
+		#main-content, #sidebar{float:none;width:100%;padding:0.8rem}
+		#wrapper{width:96%}
+		nav ul{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Great Wall of China Marching on History</h1>
+        </header>
+
+        <nav>
+		  <ul>
+			<li class="nav-item"><a href="page 1.html">Link to Page 1</a></li>
+			<li class="nav-item"><a href="page 3.html">Link to Page 3</a></li>
+			<li class="nav-item"><a href="page 4.html">Link to Page 4</a></li>
+			<li class="nav-item"><a href="page 5.html">Link to Page 5</a></li>
+		  </ul>
+		</nav>
+	
+        <div id="main-content">
+            <article>
+                <h2>Overview</h2>
+                <blockquote>“Standing as a testament to human perseverance and architectural brilliance.”</blockquote>
+                <figure>
+                    <img src="https://img.freepik.com/premium-photo/awe-inspiring-great-wall-china_1036468-1388.jpg" alt="The Great Wall of China">
+                    <figcaption>The Great Wall stretching across Northern China.</figcaption>
+                </figure>
+                <p>The Great Wall of China is one of the most iconic landmarks in the world, stretching over 13,000 miles. Built over centuries, it served as a defense system against invasions and raids.</p>
+                <p>Today, it is a UNESCO World Heritage Site and a symbol of China’s strength and resilience.</p>
+            </article>
+
+            
+		 </div><!--close div main-content-->
+		 <div id="sidebar">
+            <article>
+                <h2>Why Visit?</h2>
+                <ul>
+                    <li>Breathtaking panoramic views</li>
+                    <li>A hike through history</li>
+                    <li>Unique cultural experience</li>
+                    <li>Restored and preserved sections for visitors</li>
+                </ul>
+            </article>
+      
+            <article>
+                <h2>Highlights & Points of Interest</h2>
+                <ul>
+                    <li><strong>Mutianyu:</strong> Less crowded, scenic views</li>
+                    <li><strong>Badaling:</strong> Most popular & accessible</li>
+                    <li><strong>Jinshanling:</strong> Picturesque, great for hiking</li>
+                    <li><strong>Simatai:</strong> Offers night tours</li>
+                    <li><strong>Huanghuacheng:</strong> Near a beautiful lake</li>
+                </ul>
+            </article>
+			<article>
+                <h2>Quick Facts</h2>
+                <table>
+                    <tr><th>Fact</th><th>Detail</th></tr>
+                    <tr><td>Location</td><td>Northern China</td></tr>
+                    <tr><td>Total Length</td><td>21,196 km</td></tr>
+                    <tr><td>Construction</td><td>7th century BC 16th century AD</td></tr>
+                    <tr><td>UNESCO Status</td><td>Designated in 1987</td></tr>
+                </table>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="https://media.macphun.com/img/uploads/macphun/blog/679/_2.jpg">
+                    <figcaption>An aerial view showing an Air balloon near the Great Wall.</figcaption>
+                </figure>
+                <p>Learn more at the <a href="https://whc.unesco.org/en/list/438" target="_blank">UNESCO Official Site</a>.</p>
+            </article>
+        </div><!--close div sidebar-->
+
+        <footer>
+            <p>&copy; 2025 Journey Through the Wonders. Emmnauel Aggrey All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
